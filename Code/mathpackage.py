@@ -47,7 +47,7 @@ def lamfunction(x):
             z=1/(4*x)
     return z
 
-def EMupdateVariational(mu0,Sigma0,Xab,Yab):## the prior distribution N(mu0,sigma0),the initial value xi0
+def EMupdateVariational(mu0,Sigma0,Xab,Yab):## the prior distribution N(mu0,sigma0),the initial value xi0 (Variational Inference)
 # the given absolute feature Xab is NXd, Yab is the given label{0,+1}.
     length=len(Yab)
     xi=np.ones(length)/2
