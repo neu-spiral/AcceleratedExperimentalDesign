@@ -14,7 +14,7 @@ An example execution is as follows:
 
 	./b_py.bash
 
-in the 'b_py.bash', we connect it to the executem.bash file. 
+in the 'b_py.bash', we connect it to the executem.bash file.  The executem.bash will run the Main.py file.
 
 executem.bash
 ------------------
