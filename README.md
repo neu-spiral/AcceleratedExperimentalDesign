@@ -6,26 +6,7 @@ Usage
 ======================
 
 
-In the main.py file, we import the 'timefa', 'alpha' and 'fold': the 'timefa' is the dataset sequence, the alpha determines which cross_validation fold is used, the 'alpha' is the hyperparameter.   We use the b_py.bash to run the experiment, in the b_py.bash we can output 'timefa', 'fold', 'alpha'.
-
-
------
-An example execution is as follows:
-
-	./b_py.bash
-
-in the 'b_py.bash', we connect it to the executem.bash file.  The executem.bash will run the Main.py file.
-
-executem.bash
-------------------
-
-
-In the file:
-
-* SBATCH --time.  the run time 
-* SBATCH --mem.  the memory
-* SBATCH --partition which partition should be used
-* SBATCH --constraint the hardware requirement for this experiment.
+In the main.py file, we import the 'timefa', 'alpha' and 'fold': the 'timefa' is the dataset sequence, the alpha determines which cross_validation fold is used, the 'alpha' is the hyperparameter.   
 
 Main.py
 ------------------
