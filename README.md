@@ -1,6 +1,6 @@
 Experimental Design Acceleration
 ==============================
-This project will improve the time performance for D-optimal design algorithm. Besides, we also provide three algorithms Mutual Information (Mut), Fisher Information (Fisher), Entropy (Ent). Simulator of experiments presented in ["Accelerated Experimental Designfor Pairwise Comparisons"].
+This code improves the time performance of the greedy algorithm for maximizing D-optimal design for comparisons. We also provide three algorithms Mutual Information (Mut), Fisher Information (Fisher), Entropy (Ent). When using this code, cite the paper  ["Accelerated Experimental Designfor Pairwise Comparisons"](https://arxiv.org/abs/1901.06080) Yuan Guo, Jennifer Dy, Deniz Erdogmus, Jayashree Kalpathy-Cramer, Susan Ostmo, J. Peter Campbell, Michael F. Chiang, Stratis Ioannidis.
 
 Usage
 ======================
