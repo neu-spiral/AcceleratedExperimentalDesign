@@ -14,7 +14,7 @@ The 'timefa' is the dataset sequence, the alpha determines which cross_validatio
 Simulator Overview
 ======================
 
-There are four experimental design algorithms can be used to acquire the optimal samples. They are all submodular functions. Especially, the D optimal design can be further accelerated by fundamental greedy algorithms or lazy greedy algorithms. In the code, we can change between these algorithms by selecting the following classes. The full list for acceleration algorithms are listed below: 
+There are four experimental design algorithms can be used to acquire the optimal samples. They are all submodular functions. Especially, the D optimal design can be further accelerated by fundamental greedy algorithms or lazy greedy algorithms. In the code, we can change between these algorithms by selecting the following classes. The full list of the classes is listed below: 
 
 Acceleration Algorithms Class List
 ----------------------------------
@@ -28,10 +28,7 @@ Acceleration Algorithms Class List
 * ScalarLazyMemo: Scalar Lazy Greedy
 
 
-* Xab: absolute feature in set $\mathcal{A}$.
-* Yab: absolute label in set $\mathcal{A}$
-* Xarray: all the absolute feature
-* Omega: all the comparison pairs
+
 
 
 
