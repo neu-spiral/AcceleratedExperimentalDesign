@@ -91,7 +91,7 @@ class NaiveLazy(LazyGreedy):
         x_ij=self.Xarray[e[0],:]-self.Xarray[e[1],:]
         return -np.dot(x_ij,np.dot(self.InvA,x_ij))
                     
-class DecompositionLazy(NaiveLazy):                
+class FactorizationLazy(NaiveLazy):                
     def updateS(self,e):
         NaiveLazy.updateS(self,e)
         Ut=np.linalg.cholesky(self.InvA)
@@ -114,7 +114,7 @@ class DeMem(dict):
             self[key]=self.g(key)
             return self[key]
                 
-class DecomLazyMemo(NaiveLazy):                
+class FactorizationLazyMemo(NaiveLazy):                
     def updateS(self,e):
         NaiveLazy.updateS(self,e)
         Ut=np.linalg.cholesky(self.InvA)
