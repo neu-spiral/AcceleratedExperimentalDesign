@@ -23,14 +23,14 @@ There are four experimental design algorithms can be used to acquire the optimal
 Acceleration Class List
 ----------------------------------
 * NaiveGreedy(Naive Greedy algorithm):
-The first “naive” implementation slightly improves upon the abstract greedy algorithm (Alg. 1), which operates on the value oracle model, by computing a simpler version of gains.
+The first “naive” implementation slightly improves upon the abstract greedy algorithm (Alg. 1), which operates on the value oracle model, by computing a simpler version of gains ∆(e|S), and speeding up matrix inversion via the Sherman-Morisson formula.
 * FactorizationGreedy(Factorization Naive Greedy algorithm): We exploit the pairwise comparison structure, the greedy algorithm can indeed be accelerated by Cholesky factorization and the Sherman Morisson formula. 
 * ScalarGreedy(Memoization Naive Greedy algorithm): This algorithm takes advantage of the previous iteration’s computation. 
 * NaiveLazy(Naive Lazy Greedy): The lazy greedy algorithm is a well-known variant of the standard greedy algorithm; it reduces execution time by avoiding the computation of all |Ω \ S | marginal gains ∆(e|S ) at each iteration. This is accomplished via a “lazy” evaluation of each inner loop in FindMax in Alg. 1.
-* FactorizationLazy: Precalculation Factorization Lazy Greedy
-* FactorizationLazyMemo: Factorization Lazy Greedy
-* ScalarLazy: Precalculation Scalar Lazy Greedy
-* ScalarLazyMemo: Scalar Lazy Greedy
+* FactorizationLazy(Precomputation Factorization Lazy Greedy): The algorithm detail is shown in Algorithm.7 with precomputation. 
+* FactorizationLazyMemo(Memoization Factorization Lazy Greedy): The algorithm detail is shown in Algorithm.7 with memoization. 
+* ScalarLazy(Precomputation Scalar Lazy Greedy): The algorithm detail is shown in Algorithm.8 with precomputation. 
+* ScalarLazyMemo(Scalar Lazy Greedy): The algorithm detail is shown in Algorithm.7 with memoization. 
 
 
 ## Acknowledgement
