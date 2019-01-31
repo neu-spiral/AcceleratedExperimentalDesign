@@ -16,7 +16,7 @@ Simulator Overview
 
 There are four experimental design algorithms can be used to acquire the optimal samples. They are all submodular functions. Especially, the D optimal design can be further accelerated by fundamental greedy algorithms or lazy greedy algorithms. In the code, we can change between these algorithms by selecting the following classes. The full list of the classes is listed below: 
 
-Acceleration Algorithms Class List
+Acceleration Class List
 ----------------------------------
 * NaiveGreedy:  Naive Greedy algorithm
 * DecompositionGreedy: Factorization Naive Greedy algorithm
