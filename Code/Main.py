@@ -60,14 +60,14 @@ if __name__ == "__main__":
     Ta1=TimeTransfer(t2-t1,T1)
 
     t2=time.time()
-    b2=DecompositionGreedy(Xarray,Omega,invA1)
+    b2=FactorizationGreedy(Xarray,Omega,invA1)
     b2.initializeS()
     c2,T2=b2.greedyGrow(Size1) 
     t3=time.time()
     Ta2=TimeTransfer(t3-t2,T2)
 
     t3=time.time() 
-    b3=MemoizationGreedy(Xarray,Omega,invA1)
+    b3=ScalarGreedy(Xarray,Omega,invA1)
     b3.initializeS()
     c3,T3=b3.greedyGrow(Size1) 
     t4=time.time()
@@ -81,14 +81,14 @@ if __name__ == "__main__":
     Ta4=TimeTransfer(t5-t4,T4)
 
     t5=time.time()
-    b5=DecompositionLazy(Xarray,Omega,invA1)
+    b5=FactorizationLazy(Xarray,Omega,invA1)
     b5.initializeS()
     c5,T5=b5.greedyGrow(Size1)    
     t6=time.time()
     Ta5=TimeTransfer(t6-t5,T5)
 
     t6=time.time()
-    b6=DecomLazyMemo(Xarray,Omega,invA1)
+    b6=FactorizationLazyMemo(Xarray,Omega,invA1)
     b6.initializeS()
     c6,T6=b6.greedyGrow(Size1)
     t7=time.time()
