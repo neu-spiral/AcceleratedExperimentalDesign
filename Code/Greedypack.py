@@ -105,7 +105,7 @@ class NaiveGreedy(Greedy):
         return np.dot(x,z)
   
     
-class DecompositionGreedy(NaiveGreedy): 
+class FactorizationGreedy(NaiveGreedy): 
     def initializeS(self):
         NaiveGreedy.initializeS(self)
         Ut=np.linalg.cholesky(self.InvA)
@@ -123,7 +123,7 @@ class DecompositionGreedy(NaiveGreedy):
         return np.dot(d_ij,d_ij)
    
     	 
-class MemoizationGreedy(DecompositionGreedy):
+class ScalarGreedy(FactorizationGreedy):
     def initializeS(self):
         DecompositionGreedy.initializeS(self)
         Nsize=np.shape(self.Xarray)[0]
