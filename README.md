@@ -4,7 +4,7 @@ This code improves the time performance of the greedy algorithm for maximizing D
 >["Experimental Design Under the Bradley-Terry Model"](https://arxiv.org/abs/1901.06080).
 >Yuan Guo, Jennifer Dy, Deniz Erdogmus, Jayashree Kalpathy-Cramer, Susan Ostmo, 
 J. Peter Campbell, Michael F. Chiang, Stratis Ioannidis.
->(SDM 2019)
+>SIAM International Conference on Data Mining (SDM), Calgary, Alberta, 2019.
 
 Usage
 ======================
