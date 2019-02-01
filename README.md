@@ -1,7 +1,7 @@
 Experimental Design Acceleration
 ==============================
 This code improves the time performance of the greedy algorithm for maximizing D-optimal design for comparisons. We also provide three algorithms Mutual Information (Mut), Fisher Information (Fisher), Entropy (Ent). When using this code, cite the paper 
->["Experimental Design Under the Bradley-Terry Model"](https://arxiv.org/abs/1901.06080).
+>["Accelerated Experimental Design for Pairwise Comparisons"](https://arxiv.org/abs/1901.06080).
 >Yuan Guo, Jennifer Dy, Deniz Erdogmus, Jayashree Kalpathy-Cramer, Susan Ostmo, 
 J. Peter Campbell, Michael F. Chiang, Stratis Ioannidis.
 >SIAM International Conference on Data Mining (SDM), Calgary, Alberta, 2019.
@@ -35,7 +35,8 @@ The first “naive” implementation slightly improves upon the abstract greedy 
 
 ## Acknowledgement
 
-Our work is supported by NIH (R01EY019474, P30EY10572), NSF (SCH-1622542 at MGH; SCH-1622536 at Northeastern; SCH-1622679 at OHSU), and by unrestricted departmental funding from Research to Prevent Blindness (OHSU).
+Our work is supported by NIH (R01EY019474, P30EY10572), NSF (SCH-1622542 at MGH; SCH-1622536 and CCF-1750539 at Northeastern; SCH-1622679 at OHSU), and by unrestricted departmental funding from Research to Prevent Blindness (OHSU)
+
 
 
 
